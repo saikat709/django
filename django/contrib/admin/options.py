@@ -2339,7 +2339,7 @@ class ModelAdmin(BaseModelAdmin):
                 return SimpleTemplateResponse(
                     "admin/invalid_setup.html",
                     {
-                        "title": _("Database error"),
+                        "title": _("Incorrect lookup in query string"),
                     },
                 )
             return HttpResponseRedirect(request.path + "?" + ERROR_FLAG + "=1")
